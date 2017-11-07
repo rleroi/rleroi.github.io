@@ -1,12 +1,3 @@
-// Whatsapp
-document.getElementById('whatsappButton').onclick = function(e) {
-    window.open('https://api.whatsapp.com/send?phone=31684346693&text=' + encodeURIComponent(
-        'Name: ' + document.getElementById('contactMsg').value + ", \r\n" +
-        'E-mail: ' + document.getElementById('contactMsg').value + ", \r\nMessage: \r\n" +
-        document.getElementById('contactMsg').value
-    ));
-};
-
 //scroll to element
 //document.querySelector('.hello').scrollIntoView({ 
 //  behavior: 'smooth' 
