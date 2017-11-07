@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITBazen.com Web Development | By Ramses Leroi</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div id="header" class="grid-1 height-100">
+    <div class="col height-60 align-center">
+        <h1>Ramses Leroi</h1>
+        <div class="circle"></div>
+    </div>
+    <div class="col-12 minHeight-40 align-center align-middle overlay">
+		<div class="grid-1">
+			<span class="col-12 bigger">Traveling <abbr title="This means that I have knowledge of every layer involved in developing websites and (web)applications.">full-stack webdeveloper</abbr></span>
+			<span class="col-12_xs-0 big">
+				who <i class="fa fa-heart" aria-label="love" title="love" aria-hidden="true"></i>'s <span class="color-purple">security</span> & <span class="color-blue">technology</span>
+			</span>
+			<a class="col-12" href="#info"><i class="fa fa-angle-down bigger arrow-down" aria-hidden="true"></i></a>
+		</div>
+    </div>
+</div>
+
+<div id="info" class="minHeight-100 bg-gray">
+    <div class="grid-2_sm-1-noGutter minHeight-60">
+        <div class="col">
+            <h3 class="color-blue">Technology</h3>
+            <small>PHP7.1, Memcached or Redis, MariaDB, Wordpress or custom, NGINX, Debian or Ubuntu.<br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat sit amet ante
+                viverra, id porttitor justo ultricies. Cras non interdum justo. Morbi vitae orci purus. Sed sed pulvinar
+                justo. In ante ex, laoreet tincidunt pulvinar in, ornare et eros.
+            </small>
+        </div>
+        <div class="col">
+            <h3 class="color-purple">Security</h3>
+            <small>SQL injection, NAXSI, LetsEncrypt free TLS, Cloudflare Anti-DDoS.<br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat sit amet ante
+                viverra, id porttitor justo ultricies. Cras non interdum justo. Morbi vitae orci purus. Sed sed pulvinar
+                justo. In ante ex, laoreet tincidunt pulvinar in, ornare et eros.
+            </small>
+        </div>
+    </div>
+    <div class="grid-3_sm-2-noGutter height-40">
+        <img src="img/profile3.jpg" class="col cover">
+        <img src="img/profile2.jpg" class="col-4_sm-0_xs-0 cover">
+        <img src="img/profile1.jpg" class="col cover">
+    </div>
+<!--
+		<script src="https://lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/743b0f04536e5daca759a8b34e16318c.html" scrolling="no" allowtransparency="true" class="height-40" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+-->
+</div>
+
+<div id="contact" class="height-100">
+    <form class="grid-1-noGutter" action="https://formspree.io/info@itbazen.com" method="POST">
+        <textarea class="col height-60" name="message" required id="contactMsg" placeholder="Type your message here..."></textarea>
+        <div class="col">
+            <div class="grid-2-noGutter">
+                <input class="bg-gray col height-20" required name="name" type="text" placeholder="Your name...">
+                <input class="bg-gray col height-20" required name="email" type="email" placeholder="your e-mail address...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="grid-2-noGutter">
+                <button class="col height-20" aria-label="Send via e-mail" title="Send via e-mail" id="mailButton" type="submit">Send via <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                <button class="col height-20" aria-label="Send via WhatsApp" title="Send via WhatsApp" id="whatsappButton" type="button">Send via <i class="fa fa-whatsapp" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="js/contact.js"></script>
+</body>
+</html>
