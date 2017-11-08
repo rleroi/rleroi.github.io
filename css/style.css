@@ -196,3 +196,30 @@ small {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color:    #B1B1B1;
 }
+
+/* slider */
+.frame {
+	position: relative;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.slides {
+	display: inline-block;
+}
+
+.slider ul {
+	list-style: none;
+	-webkit-margin-before:0em;
+	-webkit-margin-after:0em;
+	margin: 0!important;
+	padding: 0;
+}
+
+.slider li {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+}

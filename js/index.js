@@ -18,3 +18,13 @@ contactText.onblur = function(e) {
         contactText.style.padding = '0';
     }
 };
+
+// lory slider
+document.addEventListener('DOMContentLoaded', function() {
+	var slider1 = document.getElementById('slider1');
+	
+	lory(slider1, {
+		//options
+		rewind: 5
+	})
+});

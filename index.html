@@ -16,7 +16,7 @@
 
 <div id="header" class="grid-1 height-100">
     <div class="col height-60 align-center">
-        <h1>Ramses Leroi</h1>
+        <h1>Ramses Leroi Web Development</h1>
         <div class="circle"></div>
     </div>
     <div class="col-12 minHeight-40 align-center align-middle overlay">
@@ -34,29 +34,46 @@
     <div class="grid-2_sm-1-noGutter minHeight-60">
         <div class="col">
             <h3 class="color-blue">Technology</h3>
-            <small>PHP7.1, Memcached or Redis, MariaDB, Wordpress or custom, NGINX, Debian or Ubuntu.<br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat sit amet ante
-                viverra, id porttitor justo ultricies. Cras non interdum justo. Morbi vitae orci purus. Sed sed pulvinar
-                justo. In ante ex, laoreet tincidunt pulvinar in, ornare et eros.
+            <small>
+				Our servers are running Debian Linux with NGINX and PHP7.1 and a MariaDB database, but custom servers are also available.<br>
+				By using an up to date version our servers will be secure against most known vulnerabilities.<br>
+				We make your website faster by using an in-memory cache, for instance Memcached or Redis.
+				This way the server only needs to load the part of the website that has changed and gets the unchanged data from memory.<br>
+				Frontend caching is also available, for instance with Varnish or with CloudFlare.<br>
+				We mostly use WordPress as a <abbr title="Content Management System. This is the system you as a website owner will use to easily manage the content of your website. To easily add pictures and change the text on your website.">CMS</abbr> but it's also possible develop a custom solution for your specific needs.
             </small>
         </div>
         <div class="col">
             <h3 class="color-purple">Security</h3>
             <small>SQL injection, NAXSI, LetsEncrypt free TLS, Cloudflare Anti-DDoS.<br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat sit amet ante
-                viverra, id porttitor justo ultricies. Cras non interdum justo. Morbi vitae orci purus. Sed sed pulvinar
-                justo. In ante ex, laoreet tincidunt pulvinar in, ornare et eros.
+				With years of experience in web application security, our applications will be higly secure. We also provide a free TLS/SSL certificate via LetsEncrypt or CloudFlare by default. This makes sure that when someone connects to your website, the connection will be encrypted. This means that no third parties can read or modify the data while it's being sent from the server to the browser.<br>
+				We can install NAXSI <abbr title="Web Application Firewall. This is an extra layer of protection that detects and blocks potential attacks, for instance XSS and SQL Injection attacks.">WAF</abbr> for an extra layer of security. We also offer free <abbr title="Distributed Denial-of-Service.">DDoS</abbr> protection through CloudFlare.
             </small>
         </div>
     </div>
-    <div class="grid-3_sm-2-noGutter height-40">
-        <img src="img/profile3.jpg" class="col cover">
-        <img src="img/profile2.jpg" class="col-4_sm-0_xs-0 cover">
-        <img src="img/profile1.jpg" class="col cover">
-    </div>
-<!--
-		<script src="https://lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/743b0f04536e5daca759a8b34e16318c.html" scrolling="no" allowtransparency="true" class="height-40" style="width: 100%; border: 0; overflow: hidden;"></iframe>
--->
+	
+	<div id="slider1" class="slider js_slider grid">
+		<div class="frame js_frame">
+			<ul class="slides js_slides height-40">
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/wordpress.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/sass.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/bootstrap.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/debian.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/php.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/nginx.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/html5.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/css3.svg"></li>
+				<li class="js_slide"><img class="height-40 cover" src="img/devicons/javascript.svg"></li>
+			</ul>
+		</div>
+		<span class="js_prev prev">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+		</span>
+		<span class="js_next next">
+			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+		</span>
+	</div>
+
 </div>
 
 <div id="contact" class="height-100">
@@ -75,6 +92,23 @@
         </div>
     </form>
 </div>
-<script src="js/contact.js"></script>
+
+
+<div class="height-100" itemscope itemtype="http://schema.org/LocalBusiness">
+<a itemprop="url" href="https://itbazen.com"><div itemprop="name"><strong>ITBazen.com</strong></div>
+</a>
+<div itemprop="description">Ramses Leroi Web Development</div>
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<strong>Address : </strong><br><span itemprop="streetAddress">Planetenbaan 7</span>,<br>
+<span itemprop="addressLocality">IJsselstein</span>,<br>
+<span itemprop="postalCode">3402HP</span><br>
+<span itemprop="addressCountry">Netherlands</span>.<br>
+</div>
+<strong>Email : </strong><span itemprop="email"><a href="mailto:info@itbazen.com">info@itbazen.com</a></span><br>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.3/lory.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
