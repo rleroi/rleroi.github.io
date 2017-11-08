@@ -3,6 +3,16 @@
 //  behavior: 'smooth' 
 //});
 
+// thanks stackoverflow
+function getScroll() {
+	var h = document.documentElement, 
+	b = document.body,
+	st = 'scrollTop',
+	sh = 'scrollHeight';
+
+	return parseInt((h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100);
+}
+
 // textarea styling
 var contactText = document.getElementById('contactMsg');
 contactText.onfocus = function(e) {
@@ -23,8 +33,24 @@ contactText.onblur = function(e) {
 document.addEventListener('DOMContentLoaded', function() {
 	var slider1 = document.getElementById('slider1');
 	
-	lory(slider1, {
+	var loryElement = lory(slider1, {
 		//options
-		rewind: 5
+		infinite: 5
+	})
+	
+	var percent = 0;
+	document.addEventListener('scroll', function() {
+		
+		// get scroll percentage
+		var newPercent = getScroll();
+		
+		// if page is scrolled for 10% further than the last scroll
+		if(newPercent > (percent + 5)) {			
+			loryElement.next(slider1);
+			percent = newPercent;
+		} else if (newPercent < (percent - 5)) {
+			loryElement.prev(slider1);
+			percent = newPercent;
+		}
 	})
 });
