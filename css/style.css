@@ -9,6 +9,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html body a {
+	color: #707070;
+}
+
 img {
     border: none;
     margin: 0;
@@ -67,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
 .color-blue {
     color: #8B8EF4;
 }
+.color-white {
+    color: #fff;
+}
 
 .big {
     font-size: 175%;
@@ -104,8 +111,10 @@ small {
     display: inline-block;
 }
 
-.overlay {
-	background-color: rgba(255,255,255,0.8);
+@media (max-width: 1024px) {
+	.overlay {
+		background-color: rgba(255,255,255,0.8);
+	}
 }
 
 #header/*, .blur:before*/ {
@@ -140,6 +149,11 @@ small {
 
 .bg-gray {
     background-color: #F5F5F5;
+}
+
+.bg-darkgray {
+    background-color: #222;
+	color: #F5F5F5;
 }
 
 #contact input, #contact textarea, #contact button {
@@ -198,6 +212,10 @@ small {
 }
 
 /* slider */
+.slider {
+	position: relative;
+}
+
 .frame {
 	position: relative;
 	font-size: 0;
@@ -222,4 +240,21 @@ small {
 	position: relative;
 	display: inline-block;
 	list-style: none;
+}
+
+.prev, .next {
+	position: absolute;
+	top: 50%;
+	margin-top: -1rem;
+	display: block;
+	cursor: pointer;
+	text-shadow: 0 0 2rem #fff;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+.next {
+	right: 1rem;
+}
+.prev {
+	left: 1rem;
 }

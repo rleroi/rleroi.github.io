@@ -47,7 +47,7 @@
             <h3 class="color-purple">Security</h3>
             <small>SQL injection, NAXSI, LetsEncrypt free TLS, Cloudflare Anti-DDoS.<br>
 				With years of experience in web application security, our applications will be higly secure. We also provide a free TLS/SSL certificate via LetsEncrypt or CloudFlare by default. This makes sure that when someone connects to your website, the connection will be encrypted. This means that no third parties can read or modify the data while it's being sent from the server to the browser.<br>
-				We can install NAXSI <abbr title="Web Application Firewall. This is an extra layer of protection that detects and blocks potential attacks, for instance XSS and SQL Injection attacks.">WAF</abbr> for an extra layer of security. We also offer free <abbr title="Distributed Denial-of-Service.">DDoS</abbr> protection through CloudFlare.
+				We can install NAXSI or mod_security <abbr title="Web Application Firewall. This is an extra layer of protection that detects and blocks potential attacks, for instance XSS and SQL Injection attacks.">WAF</abbr> for an extra layer of security. We also offer free <abbr title="Distributed Denial-of-Service.">DDoS</abbr> protection through CloudFlare.
             </small>
         </div>
     </div>
@@ -66,12 +66,8 @@
 				<li class="js_slide"><img class="height-40 cover" src="img/devicons/javascript.svg"></li>
 			</ul>
 		</div>
-		<span class="js_prev prev">
-			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
-		</span>
-		<span class="js_next next">
-			<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
-		</span>
+		<i class="js_prev prev fa fa-chevron-left" aria-hidden="true"></i>
+		<i class="js_next next fa fa-chevron-right" aria-hidden="true"></i>
 	</div>
 
 </div>
@@ -93,20 +89,20 @@
     </form>
 </div>
 
-
-<div class="height-100" itemscope itemtype="http://schema.org/LocalBusiness">
-<a itemprop="url" href="https://itbazen.com"><div itemprop="name"><strong>ITBazen.com</strong></div>
-</a>
-<div itemprop="description">Ramses Leroi Web Development</div>
-<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-<strong>Address : </strong><br><span itemprop="streetAddress">Planetenbaan 7</span>,<br>
-<span itemprop="addressLocality">IJsselstein</span>,<br>
-<span itemprop="postalCode">3402HP</span><br>
-<span itemprop="addressCountry">Netherlands</span>.<br>
+<div id="footer" class="minHeight-50 bg-darkgray grid-1">
+	<div class="col color-blue align-center" itemscope itemtype="http://schema.org/LocalBusiness">
+		<h3 class="color-blue"><a itemprop="url" href="https://itbazen.com" class="color-blue"><div itemprop="name"><strong>ITBazen.com</strong></div></a></h3>
+		<div itemprop="description">Ramses Leroi Web Development</div>
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<strong>Address: </strong><br><span itemprop="streetAddress">Planetenbaan 7</span>,<br>
+			<span itemprop="addressLocality">IJsselstein</span>,<br>
+			<span itemprop="postalCode">3402HP</span><br>
+			<span itemprop="addressCountry">Netherlands</span>.<br>
+		</div>
+		<strong>Email: </strong><span itemprop="email"><a href="mailto:info@itbazen.com" title="E-mail" alt="E-mail" class="color-white">info@itbazen.com</a></span><br>
+		<strong>KvK: </strong><span itemprop="email">68903537</span><br>
+	</div>
 </div>
-<strong>Email : </strong><span itemprop="email"><a href="mailto:info@itbazen.com">info@itbazen.com</a></span><br>
-</div>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.3/lory.min.js"></script>
 <script src="js/index.js"></script>
