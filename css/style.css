@@ -111,7 +111,7 @@ small {
     display: inline-block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
 	.overlay {
 		background-color: rgba(255,255,255,0.8);
 	}
@@ -152,7 +152,7 @@ small {
 }
 
 .bg-darkgray {
-    background-color: #222;
+    background-color: #2b2b2b;
 	color: #F5F5F5;
 }
 
