@@ -6772,14 +6772,67 @@ a.text-dark:hover, a.text-dark:focus {
     top: 0;
     left: 0;
     height: 100%; } }
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 58px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility; }
+
+  .offcanvas-collapse.open {
+    left: 0;
+    visibility: visible; } }
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden; }
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; }
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem; }
+
+.nav-underline .active {
+  font-weight: 500; }
+
 /* custom scss here */
+html,
+body {
+  background-image: linear-gradient(0deg, #091717, #041413);
+  margin: 0;
+  padding: 0; }
+
 @keyframes blink {
   0% {
     opacity: 1; }
   50% {
     opacity: 0; } }
 .mainNavbar {
-  background: rgba(255, 255, 255, 0.333);
+  background: rgba(255, 255, 255, 0.8);
   transition: background 700ms ease-in-out; }
   .mainNavbar a.brand {
     font-weight: 100;
@@ -6792,35 +6845,47 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 50%;
       vertical-align: middle;
       animation: blink 1s infinite normal ease-in-out; }
-  .mainNavbar.dark {
-    background: rgba(0, 0, 0, 0); }
-    .mainNavbar.dark a.brand {
+  .mainNavbar.navbar-dark {
+    background: rgba(255, 255, 255, 0); }
+    .mainNavbar.navbar-dark a.brand {
       color: #fff;
       text-shadow: 0 0 4px #2A9FD6; }
-      .mainNavbar.dark a.brand:hover {
+      .mainNavbar.navbar-dark a.brand:hover {
         text-shadow: 0 0 12px #2A9FD6; }
 
-.section {
-  overflow: hidden; }
-  .section.portfolio {
-    background: transparent url("/assets/images/portfolio-bg.png") no-repeat center center; }
-    .section.portfolio .btn-call-to-action {
-      border-radius: 10px;
-      border-bottom-left-radius: 0;
-      /* border-top-right-radius: 0; */
-      border: 1px solid rgba(255, 255, 255, 0.33); }
-    .section.portfolio .page-header {
-      text-transform: uppercase; }
-    .section.portfolio .phone {
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.333);
-      box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-      border-radius: 1em; }
-    .section.portfolio .portfolio-image {
-      display: block;
-      overflow: hidden;
-      background: #000 center top no-repeat scroll;
-      background-size: cover; }
-    .section.portfolio .portfolio-url {
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.333); }
+.section .fp-controlArrow.fp-prev {
+  display: none; }
+.section .fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+  animation: blink 1s infinite normal ease-in-out; }
+.section.portfolio .btn-call-to-action {
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  /* border-top-right-radius: 0; */
+  border: 1px solid rgba(255, 255, 255, 0.33); }
+.section.portfolio .page-header {
+  text-transform: uppercase; }
+.section.portfolio .phone {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.333);
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+  border-radius: 1em; }
+.section.portfolio .portfolio-image {
+  display: block;
+  overflow: hidden;
+  background: #000 center top no-repeat scroll;
+  background-size: cover; }
+.section.portfolio .portfolio-url {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.333); }
+.section.contact {
+  background: url("/assets/images/mandaue.jpg") center center no-repeat;
+  background-sizing: cover; }
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.2; }
